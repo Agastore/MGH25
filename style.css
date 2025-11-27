@@ -146,4 +146,110 @@ th {
     cursor: pointer;
     font-size: 1.1em;
     }
-    
+
+/* HEADER & PROFIL */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 25px;
+    text-align: left; /* Ubah agar konten header bisa disusun */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#profile-picture {
+    width: 80px;
+    height: 80px;
+    background-color: #4a90e2; /* Warna placeholder */
+    border-radius: 50%;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+#user-details h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+#user-details p {
+    margin: 2px 0;
+    font-size: 0.9em;
+}
+
+/* JADWAL (Perbaikan Tampilan) */
+.schedule-item {
+    /* ... (CSS lama untuk schedule-item) ... */
+    display: block; /* Pastikan item muncul di baris baru */
+    margin-bottom: 10px;
+}
+
+/* INFORMASI TAMBAHAN */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.info-grid div {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+.instagram-btn {
+    background-color: #e4405f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* MODAL CHAT */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#chat-message-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.send-message-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
