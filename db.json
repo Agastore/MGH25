@@ -1,0 +1,40 @@
+{
+  "lecturers": [
+    { "name": "Pak Fajri", "course": "Introduction to Accounting", "phone": "+6287864495362" },
+    { "name": "Pak Bambang", "course": "Introduction to Management", "phone": "+6281334359672" },
+    { "name": "Bu Diana", "course": "Introduction to Business", "phone": "+6287874619327" },
+    { "name": "Pak Edi Awan", "course": "Religion", "phone": "+6281216837973" },
+    { "name": "Pak Taufiq", "course": "Elementary English", "phone": "+6281775766523" },
+    { "name": "Pak Awiyanto", "course": "Micro Economics", "phone": "+6282143337450" },
+    { "name": "Bu/Mis Yuni", "course": "English 1", "phone": "+6285729009674" },
+    { "name": "Pak Buhairi", "course": "Madura Culture", "phone": "+6285934610569" }
+  ],
+  "admin_code": "MGH25KOMTING_SECURE",
+  "students": [
+    { "npm": "2502210193", "name": "SEFTIANA KIKI ANDIRA", "phone": "+6281330794973" },
+    { "npm": "2502210194", "name": "MUHAMMAD FIKRI MUBAROK", "phone": "+62 819-37692247" },
+    { "npm": "2502210195", "name": "DEVIT RIANASARI", "phone": "+62 813-7192-6815" },
+    { "npm": "2502210196", "name": "MUH. SUJUDI BASIMI MALIKI", "phone": "+62 878-7931-0328" },
+    { "npm": "2502210197", "name": "MOH. DIDIK SUPRIYADI", "phone": "+62 821-4376-0554" },
+    { "npm": "2502210198", "name": "WIWIN ROSITA", "phone": "+62 819-7356-0113" },
+    { "npm": "2502210199", "name": "YOGA", "phone": "+62 878-6454-3923" },
+    { "npm": "2502210201", "name": "SOFIATUL HASANAH", "phone": "+62 812-3420-7610" },
+    { "npm": "2502210202", "name": "NAVISA NUR SANDIKY", "phone": "+62 823-3760-3116" },
+    { "npm": "2502210203", "name": "SURYA FAJRI ABSYAH", "phone": "+62 812-4949-8742" },
+    { "npm": "2502210204", "name": "NURUL WAHIDANAH AL UZHMA", "phone": "+62 818-0705-5406" },
+    { "npm": "2502210205", "name": "MOHAMMAD HARIYANTO", "phone": "+62 838-5612-7632" },
+    { "npm": "2502210206", "name": "LAILATUL NAJAD", "phone": "+62 878-1655-8112" },
+    { "npm": "2502210208", "name": "SIELMA NABILATUZZAHROH", "phone": "+62 857-0808-7239" },
+    { "npm": "2502210209", "name": "AMALIATUL LATIFAH", "phone": "+62 859-3922-9039" },
+    { "npm": "2502210210", "name": "NUR JANNAH JAMILIYAH NOUFAL OUTOMO", "phone": "+62 819-9906-7601" },
+    { "npm": "2502210212", "name": "WILDATURRUHMA", "phone": "+62 877-2661-8226" },
+    { "npm": "2502210213", "name": "MOHAMMAD ANGGA KURNIAWAN FAHRAZY", "phone": "+6287717682382" },
+    { "npm": "2502210214", "name": "REVALDA AMILIA ARWAN NINGSIH", "phone": "+62 877-7719-6023" },
+    { "npm": "2502210215", "name": "MOH AKBAR MAULANA", "phone": "+62 819-9954-3997" },
+    { "npm": "2502210216", "name": "YUSRIL RESTU ARIANSYAH", "phone": "+62 831-4485-1525" },
+    { "npm": "2502210217", "name": "FARHAN MUBAROK", "phone": "+62 822-2838-3105" },
+    { "npm": "2502210218", "name": "FILDA LIANI", "phone": "+62 859-6155-4803" },
+    { "npm": "2502210219", "name": "MOH HERDI RAMADANI", "phone": "+62 859-2736-5437" },
+    { "npm": "2502210396", "name": "ACH. FARQI MAULIDI", "phone": "+62 831-2907-7716" }
+  ]
+}
