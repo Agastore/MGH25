@@ -7,89 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🗓️ Jadwal & Info Kelas MGH25</h1>
-        <p>Dosen Wali: Bapak Syauqi</p>
-    </header>
-
-    <main>
-        <section id="date-time">
-            <h2>📅 Tanggal & Waktu Saat Ini</h2>
-            <p id="current-datetime"></p>
-        </section>
-
-        <section id="schedule">
-            <h2>📚 Jadwal Kuliah (Senin - Sabtu)</h2>
-            <div class="day-selector">
-                <button onclick="showSchedule('senin')">Senin</button>
-                <button onclick="showSchedule('selasa')">Selasa</button>
-                <button onclick="showSchedule('rabu')">Rabu</button>
-                <button onclick="showSchedule('kamis')">Kamis</button>
-                <button onclick="showSchedule('jumat')">Jum'at</button>
-                <button onclick="showSchedule('sabtu')">Sabtu</button>
-                <button onclick="showSchedule('minggu')">Minggu</button>
-            </div>
-            <div id="schedule-content">
-                <p>Silakan pilih hari di atas untuk melihat jadwal.</p>
-            </div>
-        </section>
-
-        <section id="contacts">
-            <h2>📞 Kontak Dosen Permanen</h2>
-            <table id="dosen-table">
-                <thead>
-                    <tr>
-                        <th>Nama Dosen</th>
-                        <th>Mata Kuliah</th>
-                        <th>Nomor WhatsApp</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody id="dosen-contact-list">
-                    </tbody>
-            </table>
-
-            <button id="add-contact-btn" onclick="toggleAdminPanel()">Tambah Kontak (Admin)</button>
+    <div id="login-container">
+        <h2>🔑 Login Mahasiswa Kelas MGH25</h2>
+        <form id="login-form">
+            <label for="login-npm">NPM (Nomor Pokok Mahasiswa):</label>
+            <input type="text" id="login-npm" required><br><br>
             
-            <div id="admin-panel" style="display:none;">
-                <p class="admin-note">*Panel Admin. Akses diverifikasi oleh Backend Server.</p>
-                <hr>
-                <h4>Tambah Kontak Dosen Baru</h4>
-                <form id="add-lecturer-form">
-                    <label for="dosen-name">Nama Dosen:</label>
-                    <input type="text" id="dosen-name" name="name" required><br>
+            <label for="login-name">Nama Lengkap:</label>
+            <input type="text" id="login-name" required><br><br>
 
-                    <label for="dosen-course">Mata Kuliah:</label>
-                    <input type="text" id="dosen-course" name="course" required><br>
+            <button type="submit" class="login-btn">Masuk ke Website</button>
+        </form>
+        <p id="login-message" style="color:red; margin-top:10px;"></p>
+    </div>
 
-                    <label for="dosen-phone">Nomor WA (+62...):</label>
-                    <input type="tel" id="dosen-phone" name="phone" required><br>
-                    
-                    <button type="submit" class="add-btn">Tambahkan Kontak Permanen</button>
-                </form>
-            </div>
-        </section>
+    <div id="website-content" style="display:none;">
+        <header>
+            <h1>🗓️ Jadwal & Info Kelas MGH25</h1>
+            <p>Dosen Wali: Bapak Syauqi</p>
+            <button onclick="logout()" style="float:right; margin-top:-30px;">Logout</button>
+        </header>
 
-        <section id="students">
-            <h2>🧑‍🎓 Daftar Nama & NPM Mahasiswa Kelas MGH25</h2>
-            <table id="student-list-table">
-                <thead>
-                    <tr>
-                        <th>NPM</th>
-                        <th>Nama Mahasiswa</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody id="student-list">
-                    </tbody>
-            </table>
-        </section>
-    </main>
+        <main>
+            <section id="date-time"><h2>📅 Tanggal & Waktu Saat Ini</h2><p id="current-datetime"></p></section>
+            <section id="schedule">
+                <h2>📚 Jadwal Kuliah (Senin - Sabtu)</h2>
+                <div class="day-selector"></div>
+                <div id="schedule-content"></div>
+            </section>
+            
+            <section id="contacts">
+                <h2>📞 Kontak Dosen Permanen</h2>
+                <table id="dosen-table"><thead><tr><th>Nama Dosen</th><th>Mata Kuliah</th><th>Nomor WhatsApp</th><th>Aksi</th></tr></thead>
+                <tbody id="dosen-contact-list"></tbody></table>
+                <button id="add-contact-btn" onclick="toggleAdminPanel()">Tambah Kontak (Admin)</button>
+                <div id="admin-panel" style="display:none;">
+                    <p class="admin-note">*Panel Admin.</p><hr>
+                    <form id="add-lecturer-form">
+                        <label for="dosen-name">Nama Dosen:</label><input type="text" id="dosen-name" name="name" required><br>
+                        <label for="dosen-course">Mata Kuliah:</label><input type="text" id="dosen-course" name="course" required><br>
+                        <label for="dosen-phone">Nomor WA (+62...):</label><input type="tel" id="dosen-phone" name="phone" required><br>
+                        <button type="submit" class="add-btn">Tambahkan Kontak Permanen</button>
+                    </form>
+                </div>
+            </section>
 
-    <footer>
-        <p>&copy; Kelas MGH25 - Dibuat untuk Kebutuhan Perkuliahan.</p>
-    </footer>
-
+            <section id="students">
+                <h2>🧑‍🎓 Daftar Nama & NPM Mahasiswa Kelas MGH25</h2>
+                <table id="student-list-table">
+                    <thead><tr><th>NPM</th><th>Nama Mahasiswa</th><th>Aksi</th></tr></thead>
+                    <tbody id="student-list"></tbody>
+                </table>
+            </section>
+        </main>
+        <footer><p>&copy; Kelas MGH25 - Dibuat untuk Kebutuhan Perkuliahan.</p></footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
